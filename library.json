@@ -1,6 +1,6 @@
 {
   "name": "libgitrev",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Connector for build-time git revision.",
   "build": {
     "flags": [
