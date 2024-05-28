@@ -1,7 +1,7 @@
 import subprocess
 
 def get_git_specifier():
-    rev_stat = subprocess.run(['git rev-parse --short HEAD --'], shell=True, capture_output=True)
+    rev_stat = subprocess.run(['git -c core.abbrev=8 rev-parse --short HEAD --'], shell=True, capture_output=True)
     if rev_stat.returncode != 0:
         print("Error describing git revision.")
         exit(-1)
